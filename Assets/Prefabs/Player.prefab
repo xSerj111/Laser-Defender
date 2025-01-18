@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5872634621963943806}
   - component: {fileID: 5723583476836193122}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: playerShip2_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a465c2f30f77723429d41001a0e25554, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,7 +95,12 @@ GameObject:
   - component: {fileID: 2586550091029684777}
   - component: {fileID: 9203116824412881078}
   - component: {fileID: 536201582068432072}
-  m_Layer: 0
+  - component: {fileID: 5449140730593440567}
+  - component: {fileID: 2220314017307603457}
+  - component: {fileID: 5485299166783188158}
+  - component: {fileID: -1397884660610025918}
+  - component: {fileID: 3068628471263392544}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,3 +170,116 @@ MonoBehaviour:
   paddingLeft: 0.5
   paddingTop: 5
   paddingBottom: 2
+--- !u!50 &5449140730593440567
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436528103384180313}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &2220314017307603457
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436528103384180313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011606233, y: -0.12697701}
+  m_Size: {x: 0.96888316, y: 0.44893968}
+  m_Direction: 1
+--- !u!114 &5485299166783188158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436528103384180313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751bb3d3660d93a429b7a0c2ff56a6d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  hitEffect: {fileID: 4769231881228141051, guid: 37738ba6008a4004590c38182f17c0cf, type: 3}
+  applyShake: 1
+  playDmgClip: 1
+  isPlayer: 1
+  scoreForKill: 50
+--- !u!114 &-1397884660610025918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436528103384180313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bcb97cc77c4bc643a266a0324532baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 780975214915801503, guid: bcca4a053ab19fe48a7a679645f2e097, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 4.5
+  baseFiringSpeed: 0.2
+  firingSpeedVariance: 0
+  fastestFiringRate: 0
+  useAI: 1
+  isFiring: 0
+--- !u!114 &3068628471263392544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436528103384180313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402a9ecab61bdb14dbfb8a45fa2e3383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
