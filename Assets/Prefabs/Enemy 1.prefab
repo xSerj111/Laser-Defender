@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8787589793134158346}
   - component: {fileID: 5187803796280731686}
   m_Layer: 6
-  m_Name: Enemy 0
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1227715407621320488}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.064, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -109,9 +109,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000011920929}
+  m_Offset: {x: 0.012101978, y: 0.025010854}
   serializedVersion: 2
-  m_Radius: 0.32803273
+  m_Radius: 0.38773575
 --- !u!114 &6801546544225041187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,12 +124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751bb3d3660d93a429b7a0c2ff56a6d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 55
   hitEffect: {fileID: 4769231881228141051, guid: 37738ba6008a4004590c38182f17c0cf, type: 3}
   applyShake: 0
   playDmgClip: 0
   isPlayer: 0
-  scoreForKill: 35
+  scoreForKill: 50
 --- !u!114 &8787589793134158346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 8631895535255497357}
   - component: {fileID: 3086680794657583157}
   m_Layer: 6
-  m_Name: enemyRed1
+  m_Name: enemyBlack3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d7cc1578b0e14e544992fa660f0f6904, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ecf6156bb34e004981d995799372491, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

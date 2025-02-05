@@ -394,6 +394,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81a7cf5ab447e574282c63d955342cd9, type: 2}
   - {fileID: 11400000, guid: b7e8c1ec3f7b39047959c903c1658039, type: 2}
   - {fileID: 11400000, guid: acf29cc2e84e4464197e83011b441cf5, type: 2}
+  - {fileID: 11400000, guid: e4e0d01cc41644149b727ab875c8f31d, type: 2}
   timeBetweenWaves: 2
   isLooping: 1
 --- !u!1 &519420028
@@ -1307,6 +1308,10 @@ PrefabInstance:
     - target: {fileID: 6956243862638243608, guid: 08477cd0e4aa5b941bb0f4c6260722b9, type: 3}
       propertyPath: m_Name
       value: Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956243862638243608, guid: 08477cd0e4aa5b941bb0f4c6260722b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
